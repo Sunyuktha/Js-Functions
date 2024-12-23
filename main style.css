@@ -1,0 +1,26 @@
+body {
+    background-color: #f2c4e6;
+    margin: 100px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.outer {
+    background-color: #d879d2;
+    padding: 20px;
+    border-radius: 15px;
+    width: 500px;
+    height: 380px;
+    margin: auto;
+}
+
+.inner {
+    text-align: center;
+    width: 400px;
+    height: 200px;
+    background-color: white;
+
+    border-radius: 16px;
+    padding: 20px;
+    
+}

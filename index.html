@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>JavaScript String Methods</h1>
+    <div class="outer">
+        <div class="inner">
+            <h1>Some String Methods</h1>
+            <div id="string-types">
+                <button onclick="showStringDetails('length')">String length()</button>
+                <button onclick="showStringDetails('slice')">String slice()</button>
+                <button onclick="showStringDetails('toUpperCase')">String toUpperCase()</button>
+                <button onclick="showStringDetails('toLowerCase')">String toLowerCase()</button>
+                <button onclick="showStringDetails('concat')">String concat()</button>
+                <button onclick="showStringDetails('replace')">String replace()</button>
+                <button onclick="showStringDetails('trim')">String trim()</button>
+            </div>
+        </div>
+    </div>  
+
+    <div id="string-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div id="length" class="string-detail" style="display: none;">
+                <h2>String length()</h2>
+                <p>The `length` property returns the number of characters in a string.</p>
+                <button onclick="showLengthExamples()">Show Example</button>
+            </div>
+            <div id="slice" class="string-detail" style="display: none;">
+                <h2>String slice()</h2>
+                <p>The `slice()` method extracts a part of a string and returns it as a new string.</p>
+                <button onclick="showSliceExamples()">Show Example</button>
+            </div>
+            <div id="toUpperCase" class="string-detail" style="display: none;">
+                <h2>String toUpperCase()</h2>
+                <p>The `toUpperCase()` method converts a string to uppercase letters.</p>
+                <button onclick="showToUpperCaseExamples()">Show Example</button>
+            </div>
+            <div id="toLowerCase" class="string-detail" style="display: none;">
+                <h2>String toLowerCase()</h2>
+                <p>The `toLowerCase()` method converts a string to lowercase letters.</p>
+                <button onclick="showToLowerCaseExamples()">Show Example</button>
+            </div>
+            <div id="concat" class="string-detail" style="display: none;">
+                <h2>String concat()</h2>
+                <p>The `concat()` method joins two or more strings.</p>
+                <button onclick="showConcatExamples()">Show Example</button>
+            </div>
+            <div id="replace" class="string-detail" style="display: none;">
+                <h2>String replace()</h2>
+                <p>The `replace()` method replaces a specified value with another value in a string.</p>
+                <button onclick="showReplaceExamples()">Show Example</button>
+            </div>
+            <div id="trim" class="string-detail" style="display: none;">
+                <h2>String trim()</h2>
+                <p>The `trim()` method removes whitespace from both sides of a string.</p>
+                <button onclick="showTrimExamples()">Show Example</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>

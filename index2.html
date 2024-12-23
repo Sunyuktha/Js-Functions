@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators</title>
+    <link rel="stylesheet" href="./style2.css">
+</head>
+<body>
+    <h1>Javascript Operators</h1>
+   <div class="outer">
+       <div class="inner">
+           <h1>Types of Operators</h1>
+           <div id="operator-types">
+               <button  onclick="showOperatorDetails('arithmetic')">Arithmetic Operators</button>
+               <button  onclick="showOperatorDetails('relational')">Relational Operators</button>
+               <button  onclick="showOperatorDetails('logical')">Logical Operators</button>
+               <button  onclick="showOperatorDetails('assignment')">Assignment Operators</button>
+           </div>
+       </div>
+   </div>
+
+   
+   <div id="operator-modal"class="modal"style="display: none;" >
+       <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span> 
+           <div id="arithmetic" class="operator-detail"style="display: none;" >
+               <h2>Arithmetic Operator</h2>
+               <p>Arithmetic operators are used to perform numerical operations like addition, subtraction, multiplication, and division.</p>
+               <button onclick="showArithmeticExamples()">Show Examples</button>
+           </div>
+           <div id="relational" class="operator-detail"style="display: none;" >
+               <h2>Relational Operator</h2>
+               <p>Relational operators compare two entities to define or test a relationship between them.</p>
+               <button onclick="showRelationalExamples()">Show Examples</button>
+           </div>
+           <div id="logical" class="operator-detail"style="display: none;" >
+               <h2>Logical Operator</h2>
+               <p>Logical operators are symbols or words that connect expressions to perform logical operations and return a true or false value.</p>
+               <button onclick="showLogicalExamples()">Show Examples</button>
+           </div>
+           <div id="assignment" class="operator-detail"style="display: none;" >
+               <h2>Assignment Operator</h2>
+               <p>Assignment operators assign values to variables in a program. The left side of the assignment operator is the variable, and the right side is the value.</p>
+               <button onclick="showAssignmentExamples()">Show Examples</button>
+           </div>
+       </div>
+   </div>
+   <script src="./app2.js"></script>
+</body>
+</html>

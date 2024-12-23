@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+    <link rel="stylesheet" href="./style3.css">
+</head>
+<body>
+    <h1>JavaScript Array Methods</h1>
+    <div class="outer">
+        <div class="inner">
+            <h1>Some Array Methods</h1>
+            <div id="array-types">
+                <button onclick="showArrayDetails('length')">Array length</button>
+                <button onclick="showArrayDetails('toString')">Array toString()</button>
+                <button onclick="showArrayDetails('at')">Array at()</button>
+                <button onclick="showArrayDetails('join')">Array join()</button>
+                <button onclick="showArrayDetails('pop')">Array pop()</button>
+                <button onclick="showArrayDetails('push')">Array push()</button>
+                <button onclick="showArrayDetails('delete')">Array delete()</button>
+                <button onclick="showArrayDetails('concat')">Array concat()</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for displaying array method details -->
+    <div id="array-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+
+            <div id="length" class="array-detail" style="display: none;">
+                <h2>Array length</h2>
+                <p>The <strong>length</strong> property returns the number of elements in an array.</p>
+                <button onclick="showExample('Example: [1, 2, 3].length -> 3')">Show Example</button>
+            </div>
+
+            <div id="toString" class="array-detail" style="display: none;">
+                <h2>Array toString()</h2>
+                <p>The <strong>toString()</strong> method converts an array to a string.</p>
+                <button onclick="showExample('Example: [4, 5, 6].toString() -> 4,5,6')">Show Example</button>
+            </div>
+
+            <div id="at" class="array-detail" style="display: none;">
+                <h2>Array at()</h2>
+                <p>The <strong>at()</strong> method returns the element at a specific index.</p>
+                <button onclick="showExample('Example: [10, 20, 30].at(1) -> 20')">Show Example</button>
+            </div>
+
+            <div id="join" class="array-detail" style="display: none;">
+                <h2>Array join()</h2>
+                <p>The <strong>join()</strong> method joins all array elements into a string.</p>
+                <button onclick="showExample('Example: [a, b].join(-) -> a-b')">Show Example</button>
+            </div>
+
+            <div id="pop" class="array-detail" style="display: none;">
+                <h2>Array pop()</h2>
+                <p>The <strong>pop()</strong> method removes the last element from an array.</p>
+                <button onclick="showExample('Example: let arr = [1, 2, 3]; arr.pop() -> [1, 2]')">Show Example</button>
+            </div>
+
+            <div id="push" class="array-detail" style="display: none;">
+                <h2>Array push()</h2>
+                <p>The <strong>push()</strong> method adds elements to the end of an array.</p>
+                <button onclick="showExample('Example: let arr = [1, 2]; arr.push(3) -> [1, 2, 3]')">Show Example</button>
+            </div>
+
+            <div id="delete" class="array-detail" style="display: none;">
+                <h2>Array delete()</h2>
+                <p>The <strong>delete</strong> operator removes an element but leaves an undefined hole in the array.</p>
+                <button onclick="showExample('Example: let arr = [1, 2, 3]; delete arr[1] -> [1, undefined, 3]')">Show Example</button>
+            </div>
+
+            <div id="concat" class="array-detail" style="display: none;">
+                <h2>Array concat()</h2>
+                <p>The <strong>concat()</strong> method merges two or more arrays.</p>
+                <button onclick="showExample('Example: [1, 2].concat([3, 4]) -> [1, 2, 3, 4]')">Show Example</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./app3.js"></script>
+</body>
+</html>
