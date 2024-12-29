@@ -1,26 +1,100 @@
+
 body {
-    background-color: #f2c4e6;
-    margin: 100px;
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f2c4e6;
     color: #333;
+    
+}
+
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #626164;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+}
+
+
+.details {
+    padding: 20px;
+    text-align: center;
+    background-color: #f2c4e6;
+    
+}
+
+.details p {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #555;
+   
+}
+
+
+main {
+    padding: 20px;
+    text-align: center;
 }
 
 .outer {
     background-color: #d879d2;
     padding: 20px;
     border-radius: 15px;
-    width: 500px;
-    height: 380px;
-    margin: auto;
+    width: 80%;
+    height: 300px;
+    margin: 20px auto;
+    
 }
 
 .inner {
-    text-align: center;
-    width: 400px;
-    height: 200px;
-    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 
-    border-radius: 16px;
-    padding: 20px;
+.card {
+    background-color: white;
+    border-radius: 10px;
+
+    padding: 15px;
+    width: 250px;
+    text-align: center;
     
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #1f1c21;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.card a {
+    text-decoration: none;
+    color: white;
+    background-color: #171617;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color:#626164 ;
+    color: white;
+    font-size: 14px;
 }
